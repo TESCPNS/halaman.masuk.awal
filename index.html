@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Selamat Datang Member Premium – tescpns.online</title>
+<style>
+:root{--bg:#f4f7fc;--card:#fff;--text:#1b2433;--muted:#5b6678;--blue:#1d4ed8;--orange:#f97316;--line:#dbe3f0;--soft:#eaf1ff;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0f1624;--card:#17203a;--text:#eef2fb;--muted:#a3aec4;--blue:#6ea0ff;--orange:#fb923c;--line:#2b3757;--soft:#1c2a4d}}
+:root[data-theme="dark"]{--bg:#0f1624;--card:#17203a;--text:#eef2fb;--muted:#a3aec4;--blue:#6ea0ff;--orange:#fb923c;--line:#2b3757;--soft:#1c2a4d}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-padding-top:env(safe-area-inset-top,0px);-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;line-height:1.6;font-size:clamp(15px,1.4vw + 11px,18px)}
+
+.wrap{width:100%;max-width:680px;margin:0 auto;
+padding:clamp(20px,4vw,48px) max(clamp(14px,4vw,40px),env(safe-area-inset-left,0px)) clamp(32px,6vw,72px)}
+.grid{display:grid;gap:clamp(12px,2vw,24px)}
+
+.logo{font-size:clamp(24px,4vw,40px);font-weight:800;text-align:center;letter-spacing:-.5px}
+.logo .a{color:var(--blue)}.logo .b{color:var(--orange)}
+.badge{display:block;width:max-content;max-width:100%;margin:14px auto 0;background:var(--orange);color:#fff;font-weight:700;font-size:.8em;padding:4px 16px;border-radius:999px}
+h1{text-align:center;font-size:clamp(22px,4.2vw,40px);line-height:1.2;margin:18px 0 8px}
+.sub{text-align:center;color:var(--muted);margin:0 auto clamp(20px,3vw,36px);max-width:46ch}
+
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:clamp(16px,2.6vw,28px)}
+.card h2{font-size:1.1em;margin:0 0 12px}
+.pw{display:flex;gap:8px;align-items:stretch;flex-wrap:wrap}
+.pw code{flex:1 1 200px;min-width:0;background:var(--soft);border:1px dashed var(--blue);border-radius:10px;padding:12px;font-size:clamp(15px,2.2vw,20px);font-weight:700;text-align:center;word-break:break-all;user-select:all}
+button{font:inherit;font-weight:700;border:0;border-radius:10px;padding:12px 20px;min-height:48px;background:var(--blue);color:#fff;cursor:pointer;flex:0 0 auto}
+button:hover{filter:brightness(1.1)}
+button:focus-visible,.cta:focus-visible{outline:3px solid var(--orange);outline-offset:2px}
+.note{font-size:.88em;color:var(--muted);margin:10px 0 0}
+
+ol{margin:0;padding:0;list-style:none;counter-reset:s}
+ol li{counter-increment:s;position:relative;padding:0 0 16px 46px}
+ol li:last-child{padding-bottom:0}
+ol li::before{content:counter(s);position:absolute;left:0;top:0;width:32px;height:32px;border-radius:50%;background:var(--orange);color:#fff;font-weight:700;display:grid;place-items:center}
+ol li b{display:block}
+ol li span{color:var(--muted);font-size:.92em}
+
+.warn{background:var(--soft);border-left:4px solid var(--orange);border-radius:10px;padding:12px 14px;font-size:.9em}
+.cta{display:block;text-align:center;text-decoration:none;background:var(--orange);color:#fff;font-weight:800;padding:15px;border-radius:12px;min-height:48px}
+.cta{margin-top:clamp(12px,2vw,24px)}
+.cta:hover{filter:brightness(1.08)}
+footer{text-align:center;color:var(--muted);font-size:.8em;margin-top:clamp(20px,3vw,36px)}
+
+@media (max-width:360px){.pw button{width:100%}ol li{padding-left:42px}}
+@media (min-width:640px){.wrap{max-width:760px}.pw{flex-wrap:nowrap}}
+@media (min-width:1024px){
+  .wrap{max-width:1080px}
+  .grid{grid-template-columns:1fr 1fr;align-items:start}
+  .col{display:grid;gap:clamp(12px,2vw,24px)}
+}
+@media (min-width:1600px){.wrap{max-width:1240px}}
+@media (max-height:480px) and (orientation:landscape){.wrap{padding-top:14px}h1{margin-top:8px}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="logo"><span class="a">tescpns</span><span class="b">.online</span></div>
+  <span class="badge">★ MEMBER PREMIUM</span>
+  <h1>Selamat Datang, Member Premium!</h1>
+  <p class="sub">Terima kasih sudah bergabung. Akses latihan soal dan simulasi CAT CPNS premium kini terbuka untuk Anda.</p>
+
+  <div class="grid">
+    <div class="col">
+      <div class="card">
+        <h2>🔑 Password Awal Member Premium</h2>
+        <div class="pw">
+          <code id="pw">p91gj8sLnrOB2c8U</code>
+          <button id="copy" type="button">Salin</button>
+        </div>
+        <p class="note">Salin password ini, lalu gunakan di halaman member premium untuk membuat password pribadi Anda.</p>
+      </div>
+      <div class="warn">⚠️ Password awal berubah secara berkala. Pastikan nama dan nomor HP sama dengan data saat pendaftaran.</div>
+    </div>
+
+    <div class="card">
+      <h2>Cara Masuk Pertama Kali</h2>
+      <ol>
+        <li><b>Salin password awal</b><span>Tekan tombol "Salin" pada kartu password di samping.</span></li>
+        <li><b>Buka halaman member premium</b><span>Klik tombol "Masuk Halaman Member Premium" di bawah, lalu tempel password awal dan buat password pribadi Anda.</span></li>
+        <li><b>Mulai belajar</b><span>Setelah password pribadi dibuat, gunakan password tersebut untuk login berikutnya.</span></li>
+      </ol>
+    </div>
+  </div>
+
+  <a class="cta" href="https://member.premium.tescpns.online/">Masuk Halaman Member Premium →</a>
+
+  <footer>© tescpns.online · @tescpns.online</footer>
+</div>
+<script>
+document.getElementById('copy').addEventListener('click',function(){
+  var b=this,t=document.getElementById('pw').textContent;
+  function ok(){b.textContent='Tersalin ✓';setTimeout(function(){b.textContent='Salin'},1800)}
+  function sel(){var r=document.createRange();r.selectNodeContents(document.getElementById('pw'));var s=getSelection();s.removeAllRanges();s.addRange(r);b.textContent='Pilih & salin manual';}
+  try{navigator.clipboard.writeText(t).then(ok,sel)}catch(e){sel()}
+});
+</script>
+</body>
+</html>
